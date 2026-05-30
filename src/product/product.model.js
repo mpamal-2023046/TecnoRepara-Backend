@@ -35,10 +35,10 @@ const productSchema = Schema(
             min: 0,
             default: 0
         },
-        sold:{
-            type: Number,
-            min: 0,
-            default: 0
+        location:{
+            type: String,
+            required: [true, 'Location is required'],
+            maxLength: [50, `Can't be overcome 50 characters`]
         },
         category:{
             type: Schema.Types.ObjectId,
