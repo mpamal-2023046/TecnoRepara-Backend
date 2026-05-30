@@ -10,10 +10,10 @@ import { validateJwt, isAdmin} from '../../middlewares/validate.jwt.js'
 const api = Router()
 
 
-api.post('/addC', [validateJwt, isAdmin], addCategory)
-api.get('/getAllC', [validateJwt], getAllCategories)
-api.put('/updateC/:id', [validateJwt, isAdmin], updateCategory)
-api.delete('/deleteC/:id', [validateJwt, isAdmin], deleteCategory)
+api.post('/addC', addCategory)
+api.get('/getAllC', getAllCategories)
+api.put('/updateC/:id', updateCategory)
+api.delete('/deleteC/:id', deleteCategory)
 
 
 export default api

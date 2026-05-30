@@ -10,7 +10,6 @@ export const addCategory = async (req, res) => {
     try {
         let data = req.body
         data.clasification = 'CATEGORY'    
-        data.user = req.user.uid  
         const category = new Category(data)
         await category.save()
         return res.status(200).send({ message: 'Category added successfully' })
