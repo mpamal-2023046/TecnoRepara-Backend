@@ -14,6 +14,12 @@ const productSchema = Schema(
             maxLength: [45, `Can't be overcome 45 characters`]
             
         },
+        modelo:{
+            type: String,
+            required: [true, 'Model is required'],
+            maxLength: [60, `Can't be overcome 60 characters`]
+            
+        },
         description:{
             type: String,
             required: [true, 'Description is required'],

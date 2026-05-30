@@ -8,7 +8,7 @@
     "JavaScript"
   ],
   "license": "MIT",
-  "author": "(B) Marcos Pamal",
+  "author": "(MP) Marcos Pamal, (EP) Estefani De Paz, (MA) Melani Alvarado, (SG) Sucely Guacamaya",
   "type": "module",
   "main": "index.js",
   "scripts": {
